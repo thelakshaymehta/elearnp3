@@ -42,7 +42,7 @@ namespace ConAppPracticeProj3
         {
             try
             {
-                string filePath = "C:\\Users\\hp\\source\\repos\\ConsoleApp4\\ConsoleApp4\\StudentData02.txt";
+                string filePath = "C:\\Users\\hp\\source\\repos\\ConsoleApp4\\StudentData02.txt";
 
                 if (File.Exists(filePath))
                 {
