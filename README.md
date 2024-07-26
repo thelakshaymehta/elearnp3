@@ -1,24 +1,37 @@
+using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="JobGroupTypes.aspx.cs" Inherits="YourNamespace.JobGroupTypes" %>
+namespace YourNamespace
+{
+    public partial class JobGroupTypes : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                BindGridView();
+            }
+        }
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Job Group Types</title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
-                <Columns>
-                    <asp:BoundField DataField="i_grouptype" HeaderText="Group Type" />
-                    <asp:BoundField DataField="ch_groupname" HeaderText="Group Name" />
-                    <asp:BoundField DataField="ti_priority" HeaderText="Priority" />
-                    <asp:BoundField DataField="ch_ReportAssemblyLocation" HeaderText="Report Assembly Location" />
-                    <asp:BoundField DataField="b_active" HeaderText="Active" />
-                </Columns>
-            </asp:GridView>
-        </div>
-    </form>
-</body>
-</html>
+        private void BindGridView()
+        {
+            string constr = ConfigurationManager.ConnectionStrings["JobGridDB"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(constr))
+            {
+                using (SqlCommand cmd = new SqlCommand("sp_GetJobGroupTypes", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dt = new DataTable();
+                        sda.Fill(dt);
+                        GridView1.DataSource = dt;
+                        GridView1.DataBind();
+                    }
+                }
+            }
+        }
+    }
+}
