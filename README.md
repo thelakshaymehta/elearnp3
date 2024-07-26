@@ -1,17 +1,3 @@
-CREATE PROCEDURE sp_GetJobGroupTypes
-AS
-BEGIN
-    SELECT 
-        i_grouptype, 
-        ch_groupname, 
-        ti_priority, 
-        ch_ReportAssemblyLocation, 
-        b_active
-    FROM 
-        JobGrid.dbo.JOBGROUPTYPES
-END
-
-
 
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="JobGroupTypes.aspx.cs" Inherits="YourNamespace.JobGroupTypes" %>
 
