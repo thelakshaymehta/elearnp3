@@ -1,34 +1,23 @@
 using System;
-using System.Data;
-using System.Data.SqlClient;
+using System.Web.UI;
 
-public class JobGridDAL
+public partial class JobGridPage : Page
 {
-    private string connectionString = "your_connection_string_here";
-
-    public string GetKeyValue(int si_registryKey)
+    protected void Page_Load(object sender, EventArgs e)
     {
-        string keyValue = string.Empty;
+    }
 
-        using (SqlConnection conn = new SqlConnection(connectionString))
+    protected void btnGetKeyValue_Click(object sender, EventArgs e)
+    {
+        if (int.TryParse(txtRegistryKey.Text, out int si_registryKey))
         {
-            using (SqlCommand cmd = new SqlCommand("sp_GetJobGridRegisteryAssesment", conn))
-            {
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@si_registryKey", si_registryKey);
-
-                conn.Open();
-
-                using (SqlDataReader reader = cmd.ExecuteReader())
-                {
-                    if (reader.Read())
-                    {
-                        keyValue = reader["vch_keyvalue"].ToString();
-                    }
-                }
-            }
+            JobGridDAL dal = new JobGridDAL();
+            string keyValue = dal.GetKeyValue(si_registryKey);
+            lblKeyValue.Text = keyValue;
         }
-
-        return keyValue;
+        else
+        {
+            lblKeyValue.Text = "Invalid Registry Key.";
+        }
     }
 }
