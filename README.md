@@ -1,37 +1,34 @@
 using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration;
 
-namespace YourNamespace
+public class JobGridDAL
 {
-    public partial class JobGroupTypes : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            if (!IsPostBack)
-            {
-                BindGridView();
-            }
-        }
+    private string connectionString = "your_connection_string_here";
 
-        private void BindGridView()
+    public string GetKeyValue(int si_registryKey)
+    {
+        string keyValue = string.Empty;
+
+        using (SqlConnection conn = new SqlConnection(connectionString))
         {
-            string constr = ConfigurationManager.ConnectionStrings["JobGridDB"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(constr))
+            using (SqlCommand cmd = new SqlCommand("sp_GetJobGridRegisteryAssesment", conn))
             {
-                using (SqlCommand cmd = new SqlCommand("sp_GetJobGroupTypes", con))
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@si_registryKey", si_registryKey);
+
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                    if (reader.Read())
                     {
-                        DataTable dt = new DataTable();
-                        sda.Fill(dt);
-                        GridView1.DataSource = dt;
-                        GridView1.DataBind();
+                        keyValue = reader["vch_keyvalue"].ToString();
                     }
                 }
             }
         }
+
+        return keyValue;
     }
 }
