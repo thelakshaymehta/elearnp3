@@ -1,23 +1,22 @@
-using System;
-using System.Web.UI;
+import sys
+import base64
+import json
 
-public partial class JobGridPage : Page
-{
-    protected void Page_Load(object sender, EventArgs e)
-    {
-    }
+def decode_payload(token):
+    if not token.startswith('S0.'):
+        return 'Not an OAuth token'
+    
+    payload = token.split('.')[1]
+    decoded_data = base64.b64decode(payload.replace('@', '=').replace('_', '+').replace(',', '&'))
+    
+    try:
+        # Attempt to format the decoded data as JSON
+        formatted_data = json.dumps(json.loads(decoded_data), indent=4)
+    except json.JSONDecodeError:
+        # If it's not valid JSON, return the raw decoded data
+        formatted_data = decoded_data.decode('utf-8')
+    
+    return formatted_data
 
-    protected void btnGetKeyValue_Click(object sender, EventArgs e)
-    {
-        if (int.TryParse(txtRegistryKey.Text, out int si_registryKey))
-        {
-            JobGridDAL dal = new JobGridDAL();
-            string keyValue = dal.GetKeyValue(si_registryKey);
-            lblKeyValue.Text = keyValue;
-        }
-        else
-        {
-            lblKeyValue.Text = "Invalid Registry Key.";
-        }
-    }
-}
+if __name__ == '__main__':
+    print(decode_payload(sys.argv[1]))
