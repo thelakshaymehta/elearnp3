@@ -1,15 +1,2 @@
-Here’s the updated version with that detail included:
-
-⸻
-
-Subject: Re: New AO page keeps spinning during SSO from Schwab.com to Schwabplan.com
-
-Hi Kavitha,
-
-I looked into the issue and found that the AO page was being loaded over HTTP, while the CORS configuration only allows requests from HTTPS (https://www.schwabplan.com).
-When I manually changed the URL to HTTPS, the origin matched and the page started working.
-
-Thanks,
-Lakshay
-
-⸻
+Hi Rajesh,
+I was on leave yesterday, so I couldn’t pick this up immediately. Since QA has already completed testing and the sprint item is closed, do you want me to still apply this change now or should we plan it as a refinement in upcoming similar items? I’m fine to do it either way
