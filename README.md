@@ -1,7 +1,1 @@
-SELECT 
-    COLUMN_NAME,
-    DATA_TYPE,
-    CHARACTER_MAXIMUM_LENGTH
-FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_NAME = 'plan_Fees'
-  AND COLUMN_NAME = 'CHARGE';
+The team worked on an additional defect story to resolve an intermittent environment issue
