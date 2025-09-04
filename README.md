@@ -1,9 +1,7 @@
-using (var reader = await command.ExecuteReaderAsync())
-{
-    if (await reader.ReadAsync())
-    {
-        charge = reader.GetDecimal(reader.GetOrdinal("CHARGE"));
-    }
-}
-
-Console.WriteLine($"CHARGE = {charge}");
+SELECT 
+    COLUMN_NAME,
+    DATA_TYPE,
+    CHARACTER_MAXIMUM_LENGTH
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'plan_Fees'
+  AND COLUMN_NAME = 'CHARGE';
