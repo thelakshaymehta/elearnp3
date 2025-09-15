@@ -1,20 +1,13 @@
+Hi Rajesh,
 
+I wanted to have a quick 1:1 because there are a few things I have been feeling lately, and I think it’s better to share with you directly.
 
-Story 1: Mobile SSO Recognition
-Sprint Goal:
-Develop a proof of concept (POC) to validate that Schwabplan Web can recognize SSO requests from the Retail Mobile app and embed Investment Rebalance/Transfer pages within a webview.
+I really respect the work you do and I’m learning a lot under your guidance, but at times I feel a bit demotivated because of how some of the feedback comes across. I wanted to clarify that I’m not asking for extra appreciation or recognition, but some comments — for example in the last retrospective call about the Star of the Spring nomination, or when very small things like message capitalization are pointed out — end up making me feel singled out.
 
-Accomplishment:
-Successfully built and demo-ready POC that confirms the ability to recognize mobile SSO requests and display rebalance/transfer pages in a webview.
+There have also been times when I’ve taken up difficult stories that spilled over multiple sprints and delivered them, or helped during late-night production issues, but instead of feeling encouraged, I feel like my mistakes are magnified compared to others.
 
----
+One major instance was when we spent months finalizing the module approach, groomed the story based on that, and just after grooming the approach changed. I requested time to analyze the new approach, but the estimate wasn’t adjusted. I struggled a lot to deliver it on time and had to work late nights, which was very stressful.
 
-Story 2: Account Number Research
-Sprint Goal:
-Investigate how Schwabplan UI processes 9-digit account numbers with leading zeros and determine if updates are needed for proper formatting.
+I’m sharing this because I want to perform my best, stay focused, and keep contributing positively to the team. I value your feedback, and if there’s anything I should do differently, I’m open to improving. But I also wanted to make you aware that some of these situations are impacting my motivation and confidence.
 
-Accomplishment:
-Completed the analysis and attached the findings document with the story, confirming the leading zero is not dropped and development work is needed to display the account number correctly.
-
-
-
+Do you think we could find a way to make feedback a bit more constructive so I can use it to improve without feeling discouraged?
