@@ -1,1 +1,2 @@
+For Framed in WebViews – Investment Rebalance Enter Order Page story, began development and successfully implemented MegaNav removal (AC2 partially completed).
 For the Framed in WebViews – Investment Rebalance Enter Order Page story, the approach was revised after grooming. This required additional analysis effort to align with the new approach, which impacted timelines and resulted in partial completion of AC2 in this sprint.
