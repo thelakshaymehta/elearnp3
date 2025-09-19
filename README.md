@@ -1,2 +1,11 @@
-Sharing some pictures of the resort below so everyone can get a feel of the place!
-(If you had voted “No” earlier, you still have a chance to change your vote to “Yes” 😜)
+Hi Everyone,
+
+This is the final poll to confirm if you are joining the outing at Guhantara Resort on 28th September (Saturday).
+If you haven’t confirmed yet or want to change your previous response, please do it now – last chance to change your mind! 😄
+
+⸻
+
+Poll:
+“Are you joining?”
+	•	✅ Yes
+	•	❌ No
