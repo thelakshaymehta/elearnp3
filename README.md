@@ -1,5 +1,1 @@
-Hi Everyone,
-
-As of now, we have received 15 YES responses for the outing.
-We also called everyone individually – so please try to join.
-It’s going to be a fun day together, don’t miss it! 🎉
+Some people are facing issues selecting the Yes option in the poll — so please ignore the poll and share your confirmation directly with me or Rishikesh, or just post your name here in the group. ✅
