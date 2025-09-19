@@ -1,1 +1,1 @@
-Started development for Investment Rebalance Enter Order Page framed in WebViews, successfully implemented WebView detection, and delivered AC2 progress with MegaNav removal completed.
+Started development for Investment Rebalance Enter Order Page framed in WebViews and successfully implemented WebView detection and MegaNav removal
