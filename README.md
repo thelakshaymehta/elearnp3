@@ -1,1 +1,1 @@
-Some people are facing issues selecting the Yes option in the poll — so please ignore the poll and share your confirmation directly with me or Rishikesh, or just post your name here in the group. ✅
+For the Framed in WebViews – Investment Rebalance Enter Order Page story, the approach was revised after grooming. This required additional analysis effort to align with the new approach, which impacted timelines and resulted in partial completion of AC2 in this sprint.
