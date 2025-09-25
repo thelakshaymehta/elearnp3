@@ -1,1 +1,1 @@
-This account type is not eligible for rebalance. Please visit the web if you wish to request a rebalance.
+Hi Chandler, the code changes to convert fund fact sheet URLs to plain text are now merged, so the mobile team can test them
