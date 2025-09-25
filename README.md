@@ -1,1 +1,1 @@
-Started development for Investment Rebalance Enter Order Page framed in WebViews and successfully implemented WebView detection and MegaNav removal
+This account type is not eligible for rebalance. Please visit the web if you wish to request a rebalance.
