@@ -1,4 +1,7 @@
-Thanks to Lakshay for quickly turning that around, otherwise it would have affected the release cycle itself
+Hi [Scrum Master Name],  
 
+Amar requested a document on the current CSS architecture of Shopland by Monday. Rajesh informed me, and I’ve already been working on it since Thursday and Friday.  
+Could you please add a story for this in the current sprint under 3.F?
 
-It looks like you guys fixed it, so thank you very much for all the hard work there. I know that was a tough one.
+Thanks,  
+Lakshay
