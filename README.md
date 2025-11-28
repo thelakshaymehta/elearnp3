@@ -1,7 +1,3 @@
-Hi [Scrum Master Name],  
-
-Amar requested a document on the current CSS architecture of Shopland by Monday. Rajesh informed me, and I’ve already been working on it since Thursday and Friday.  
-Could you please add a story for this in the current sprint under 3.F?
-
-Thanks,  
-Lakshay
+Thanks a lot, Chandler — I really appreciate your kind words.  
+I’ll keep giving my best, and I’ll make sure I always live up to the trust you’ve shown in me.  
+Your guidance and clarity as our PO genuinely helps me grow and deliver better every day.
