@@ -1,7 +1,5 @@
-Thanks a lot, Arpitha, for the RPS newsletters! They’ve been super useful in understanding the domain better and staying aligned with what’s happening. Appreciate the effort and looking forward to more!
 
-
-
+Post sprint planning, an additional Token Upgrade requirement was identified along with the planned Arcata Upgrade, which required extra development effort. Due to time constraints, the story was completed as development-only, with testing planned in the next sprint.
 
 
 You are an expert technical teacher. For any {topic}, produce one complete, self-contained explanation that fully teaches a developer the topic.
