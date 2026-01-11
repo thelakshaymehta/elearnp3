@@ -1,3 +1,10 @@
+Rajesh, since Gopal did the original analysis and already understands the impacted areas, it would be most efficient for him to continue the verification.
+
+If he’s fully occupied and this needs to be picked up by me, I’ll need ramp-up time to understand the context from scratch. In that case, can we please create a story or sub-task for this work so capacity and timelines are tracked properly?
+
+
+
+
 
 Post sprint planning, an additional Token Upgrade requirement was identified along with the planned Arcata Upgrade, which required extra development effort. Due to time constraints, the story was completed as development-only, with testing planned in the next sprint.
 
