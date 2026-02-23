@@ -1,3 +1,14 @@
+Hi Team,
+
+It seems someone deleted all data from the ELE registry today, and it was later restored (likely copied from LE5). Logins are working now, but the Terms and Distribution pages are failing, possibly due to inconsistent data.
+
+Could you please repopulate LE3 with the original data?
+
+Thanks,  
+Lakshay
+
+
+
 Act as my real-time technical interview assistant for .NET Full Stack interviews.
 
 My stack:
