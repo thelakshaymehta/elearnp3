@@ -1,8 +1,8 @@
 Hi Team,
 
-It seems someone deleted all data from the ELE registry today, and it was later restored (likely copied from LE5). Logins are working now, but the Terms and Distribution pages are failing, possibly due to inconsistent data.
+It appears the ELE registry data was cleared earlier today and later restored (likely from LE5). Logins are working now, but the Terms and Distribution pages are still failing, possibly due to data inconsistency.
 
-Could you please repopulate LE3 with the original data?
+Could you please help repopulate LE3 with the original data or restore it from a stable environment?
 
 Thanks,  
 Lakshay
